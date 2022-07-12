@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var msgLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     @IBAction func msgButtonPressed(_ sender: UIButton) {
         print("😎 msgButtonPressed")
         msgLabel.text = "Hello There"
+        imageView.image = UIImage(named: "P01")
     }
     
 }
